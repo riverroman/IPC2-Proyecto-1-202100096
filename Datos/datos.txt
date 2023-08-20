@@ -1,0 +1,17 @@
+Lista Senal (para guardar objetos senal) 
+ 
+     ->Senal
+        -> Nombre
+        -> Tiempo
+        -> Amplitud
+        -> Lista de Senal 
+            -Insertar
+            -Recorrer
+        -> Lista de patrones
+            -Insertar
+            -Recorrer
+
+    ->datos
+        -> Tiempo
+        -> Amplitud
+        -> Valor
