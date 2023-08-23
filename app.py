@@ -5,14 +5,14 @@ from ListaDatos.datos import Datos
 from ListaSenal.senal import Senal
 
 def cargar_xml():
-    
+
     try:
         
         archivo = input("\nIngrese la ruta del archivo XML : ")
     
         tree = ET.parse(archivo)
         root = tree.getroot()
-    
+        
         lista_senal_temporal = ListaSenal()
     
         for senal in root.findall('senal'):
@@ -45,19 +45,19 @@ def cargar_xml():
                 if tiempo_dato != '' and amplitud_dato != '':
                     lista_datos_patrones_temporal.agregar(nuevo)
                 
-            lista_senal_temporal.agregar(Senal(senal_nombre, tiempo_senal, amplitud_senal, lista_datos_temporal, lista_datos_patrones_temporal))
-    
+            lista_senal_temporal.agregar(Senal(senal_nombre, tiempo_senal, amplitud_senal, 
+                                            lista_datos_temporal, lista_datos_patrones_temporal))
+
         lista_senal_temporal.imprimir_listaSenal()
-        lista_senal_temporal.grafica_lista_patrones()
-        
-    except FileNotFoundError:
-        
-        print("\nNo se pudo cargar el archivo XML, verifique la ruta ingresada")
-
-
+        return lista_senal_temporal
             
-                
-                
+    except FileNotFoundError:
+        print("\nNo se pudo cargar el archivo XML, verifique la ruta ingresada")
+        return None
+
+
+        
+        
             
             
 

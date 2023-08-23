@@ -1,7 +1,5 @@
 from .NodoDatos import NodoDatos
 import os
-import sys
-
 class ListaDatos:
     def __init__(self):
         self.cabeza = None
@@ -27,10 +25,6 @@ class ListaDatos:
 
 
     def graficar(self,nombre_senal,tiempo,amplitud):
-        
-        ruta_guardado = '/Users/riverroman/Desktop/IPC2-Proyecto-1-202100096/img/'
-        nombre_archivo = f'{nombre_senal}.png'
-        
         
         f = open('bb.dot','w')
         
@@ -77,7 +71,7 @@ class ListaDatos:
         f.write(text)
         f.close()
         
-        comando_dot = f'dot -Tpng bb.dot -o "{ruta_guardado}{nombre_archivo}"'
+        comando_dot = f'dot -Tpng bb.dot -o "img-inicial/Grafico-Inicial-{nombre_senal}.png"'
         os.system(comando_dot)
 
         print('\nGrafica Terminada!!')

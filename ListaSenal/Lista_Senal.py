@@ -1,8 +1,4 @@
 from .NodoSenal import NodoSenal
-import sys
-import os
-
-
 class ListaSenal:
     def __init__(self):
         self.cabeza = None
@@ -43,15 +39,33 @@ class ListaSenal:
         actual = self.cabeza
         while actual != None:
             
-            actual.senal.lista_datos_patrones.graficar(actual.senal.nombre,
-                                            str(actual.senal.tiempo),
-                                            str(actual.senal.amplitud))
-            
+            nombre_archivo = f"{actual.senal.nombre}.png"
+            actual.senal.lista_datos_patrones.graficar(actual.senal.nombre, 
+                                                    str(actual.senal.tiempo), 
+                                                    str(actual.senal.amplitud), 
+                                                    nombre_archivo)
+
             actual = actual.siguiente
-            
-        
-    #def buscar():
-    #def agrupar():
+    
+    def buscar(self, nombre):
+        actual = self.cabeza
+        while actual != None:
+            if actual.senal.nombre == nombre:
+                return actual.senal
+            actual = actual.siguiente
+        return None
+    
+    def agrupar_patrones(self, nombre):
+        actual = self.cabeza
+        while actual != None:
+            if actual.senal.nombre == nombre:
+                actual.senal.lista_datos.agrupar_patrones()
+                return actual.senal
+            actual = actual.siguiente
+        return None
+    
+    
+    
     
     
         

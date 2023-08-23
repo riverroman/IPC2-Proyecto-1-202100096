@@ -15,3 +15,6 @@ Lista Senal (para guardar objetos senal)
         -> Tiempo
         -> Amplitud
         -> Valor
+
+
+#lista_senal_temporal.grafica_lista_patrones()
