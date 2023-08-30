@@ -33,7 +33,19 @@ def main():
         elif opcion == '2':
             carga()
         elif opcion == '3':
-            pass
+            if lista_senal is not None:
+                print('\n================================================================================================')
+                with Bar('Generando Archivo XML', fill='⏳') as bar:
+                    lista_senal.generar_xml_salida()
+                    for i in range(100):
+                        sleep(0.02)
+                        bar.next()
+                print('================================================================================================')
+                print('\n========================================')
+                print('  Archivo XML generado correctamente!   ')
+                print('========================================')
+            else:
+                print('\nSe debe cargar un archivo XML!')
         elif opcion == '4':
             informacion_personal()
         elif opcion == '5':
@@ -55,14 +67,17 @@ def carga():
     
     print('\n========================================================')
     
-    with Bar('Generando...') as bar:
+    with Bar('Generando Archivo Xml...') as bar:
         for i in range(100):
             sleep(0.02)
             bar.next()
             
     print('========================================================')
-    
+
 main()
+
+
+
 
 
 

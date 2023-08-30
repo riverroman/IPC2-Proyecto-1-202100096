@@ -5,7 +5,6 @@ def grafica_inicial(lista):
     print('======================')
     
     print('\n1. Grafica Inicial')
-    print('2. Grafica Corregida')
     print('2. Grafica Matriz')
     print('3. Grafica Final')
     print('4. Regresar')

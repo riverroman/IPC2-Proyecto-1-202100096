@@ -1,20 +1,32 @@
 Lista Senal (para guardar objetos senal) 
- 
-     ->Senal
+
+------------------------------------------------------ 
+    ->Senal:
         -> Nombre
         -> Tiempo
         -> Amplitud
+
         -> Lista de Senal 
             -Insertar
             -Recorrer
+
         -> Lista de patrones
             -Insertar
             -Recorrer
+------------------------------------------------------
 
-    ->datos
+    ->Datos:
         -> Tiempo
         -> Amplitud
         -> Valor
 
+------------------------------------------------------
+    ->Patron:
 
-#lista_senal_temporal.grafica_lista_patrones()
+        -> Datos
+        -> Cadena patron
+        
+        -> Grupo
+            -> El_grupo
+            -> Cadena_grupo
+        

@@ -1,5 +1,6 @@
 from .NodoDatos import NodoDatos
 import os
+from Patron.patron import patron 
 class ListaDatos:
     def __init__(self):
         self.cabeza = None
@@ -15,6 +16,35 @@ class ListaDatos:
             actual = actual.siguiente
         actual.siguiente = NodoDatos(dato=dato)
         self.contador_datos += 1
+
+    def insertar_dato_ordenado(self, dato):
+        
+        nueva_celda = NodoDatos(dato=dato)
+        
+        self.contador_celdas = +1
+        
+        if self.cabeza is None:
+            self.cabeza = nueva_celda
+            return
+        
+        if dato.tiempo < self.cabeza.dato.tiempo or (
+                dato.tiempo == self.cabeza.dato.tiempo and dato.amplitud <= self.cabeza.dato.amplitud):
+            
+            nueva_celda.siguiente = self.cabeza
+            self.cabeza = nueva_celda
+            return
+        
+        actual = self.cabeza
+        
+        while actual.siguiente is not None and (
+                dato.tiempo >  actual.siguiente.dato.tiempo or (
+                    dato.tiempo == actual.siguiente.dato.tiempo and dato.amplitud > actual.siguiente.dato.amplitud)):
+            
+            actual = actual.siguiente
+            
+        nueva_celda.siguiente = actual.siguiente
+        actual.siguiente = nueva_celda
+        
 
     def imprimir_listaDatos(self):
         print('========================================')
@@ -71,10 +101,68 @@ class ListaDatos:
         f.write(text)
         f.close()
         
-        comando_dot = f'dot -Tpng bb.dot -o "img-inicial/Grafico-Inicial-{nombre_senal}.png"'
+        comando_dot = f'dot -Tpng bb.dot -o "img/Grafico-{nombre_senal}.png"'
         os.system(comando_dot)
 
         print('\nGrafica Terminada!!')
 
+    def devolver_patrones_por_nivel(self,lista_patrones_nivel):
+        
+        actual = self.cabeza
+        sentinela_de_fila = actual.dato.tiempo
+        fila_iniciada = False
+        recolector_patron = ""
+        
+        while actual != None:
+            if sentinela_de_fila != actual.dato.tiempo:
+                fila_iniciada = False
+                lista_patrones_nivel.agregar(patron(sentinela_de_fila,recolector_patron))
+                recolector_patron = ""
+                sentinela_de_fila = actual.dato.tiempo
+            if fila_iniciada == False:
+                fila_iniciada = True
+                recolector_patron += str(actual.dato.valor)+"-"
+            else:
+                recolector_patron += str(actual.dato.valor)+"-"
+            
+            actual = actual.siguiente
+        
+        lista_patrones_nivel.agregar(patron(sentinela_de_fila, recolector_patron))
+        
+        return lista_patrones_nivel
+                
+    def devolver_cadena_por_grupo(self, grupo):
+        
+        string_resultado = ""
+        string_temporal = ""
+        buffer = ""
+        
+        for digito in grupo:
+            
+            if digito.isdigit():
+                buffer += digito
+                
+            else:
+                string_temporal = ""
+                #Aca se recorre la lista
+                actual = self.cabeza
+                while actual != None:
+                    if actual.dato.tiempo == str(buffer):
+                        string_temporal += actual.dato.valor+","
+                    actual = actual.siguiente
+                string_resultado += string_temporal + "\n"
+                buffer = ""
+                
+        return string_resultado
+                
+                                    
+            
+            
+                
+                
+                
+        
+        
+        
         
         

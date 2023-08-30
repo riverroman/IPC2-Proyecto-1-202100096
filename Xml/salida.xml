@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<senalesReducidas>
+ <listasenal>
+  <senal>
+   <Nombre>Prueba Desordenada</Nombre>
+   <Tiempo>5</Tiempo>
+   <Amplitud>4</Amplitud>
+   <listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+  </listaPatrones>
+  </senal>
+  <senal>
+   <Nombre>Prueba Ordenada</Nombre>
+   <Tiempo>5</Tiempo>
+   <Amplitud>4</Amplitud>
+   <listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>1</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+    <listaPatrones>0</listaPatrones>
+   </listaPatrones>
+  </senal>
+ </listasenal>
+</senalesReducidas>
