@@ -1,59 +1,49 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <senalesReducidas>
- <listasenal>
+ <listasenales>
   <senal>
-   <Nombre>Prueba Desordenada</Nombre>
-   <Tiempo>5</Tiempo>
-   <Amplitud>4</Amplitud>
-   <listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-  </listaPatrones>
+   <senalnombre>Nombre = Prueba 1 Amplitud = 4</senalnombre>
+   <grupo g="1" />
+   <dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+  </dato>
   </senal>
   <senal>
-   <Nombre>Prueba Ordenada</Nombre>
-   <Tiempo>5</Tiempo>
-   <Amplitud>4</Amplitud>
-   <listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>1</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-    <listaPatrones>0</listaPatrones>
-   </listaPatrones>
+   <senalnombre>Nombre = Prueba 2 Amplitud = 4</senalnombre>
+   <grupo g="2" />
+   <dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>0</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+    <dato>1</dato>
+   </dato>
   </senal>
- </listasenal>
+ </listasenales>
 </senalesReducidas>

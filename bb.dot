@@ -1,29 +1,29 @@
 
-
-            digraph G {"Tiempo=4","Amplitud=4"->" Nombre Senal: Prueba 1" bgcolor="#3990C4" style="filled"
+        
+            digraph G {"Tiempo=4","Amplitud=4"->" Nombre Senal: Prueba 2" bgcolor="white" style="filled"
             subgraph cluster_1 { fillcolor="#07c7a0" style="filled"
-            node [shape=circle fillcolor="gold:brown" style="radial" gradientangle=180]
+            node [shape=box3d fillcolor="gray" style="radial" gradientangle=180]
             a0 [ label=<
-            <TABLE border="3" cellspacing="10" cellpadding="10" style="rounded" bgcolor="blue:red" gradientangle="315">
-<TR><TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
+            <TABLE border="1" cellspacing="10" cellpadding="10" style="dotted" bgcolor="white">
+<TR><TD border="1" bgcolor="#90827b">0</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">0</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">0</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">0</TD>
 </TR>
-<TR><TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
+<TR><TD border="1" bgcolor="#90827b">1</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">1</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">1</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">1</TD>
 </TR>
-<TR><TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">0</TD>
+<TR><TD border="1" bgcolor="#90827b">0</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">0</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">0</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">0</TD>
 </TR>
-<TR><TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
-<TD border="3" bgcolor="yellow" gradientangle="315">1</TD>
+<TR><TD border="1" bgcolor="#90827b">1</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">1</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">1</TD>
+<TD border="1" bgcolor="#90827b" gradientangle="315">1</TD>
  </TR></TABLE>>];
                 }
                 }

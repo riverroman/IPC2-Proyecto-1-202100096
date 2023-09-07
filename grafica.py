@@ -1,3 +1,5 @@
+from ListaSenal.Lista_Senal import ListaSenal
+
 def grafica_inicial(lista):
     
     print('\n======================')
@@ -46,6 +48,6 @@ def grafica_inicial(lista):
         return
     else:
         print('\nOpcion no valida!')
-
+    
 
     

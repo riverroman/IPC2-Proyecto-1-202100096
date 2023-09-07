@@ -11,7 +11,7 @@ print('======================\n')
 def main():
     
     lista_senal = None
-    
+    contador_senales = 0 
     while True:
         
         print('\n======================')
@@ -30,10 +30,14 @@ def main():
         
         if opcion == '1':
             lista_senal = cargar_xml()
+            contador_senales += 1 
         elif opcion == '2':
-            carga()
+            if contador_senales > 0: 
+                carga()
+            else:
+                print('\nSe debe cargar un archivo XMl')
         elif opcion == '3':
-            if lista_senal is not None:
+            if contador_senales > 0:
                 print('\n================================================================================================')
                 with Bar('Generando Archivo XML', fill='⏳') as bar:
                     lista_senal.generar_xml_salida()
@@ -49,13 +53,15 @@ def main():
         elif opcion == '4':
             informacion_personal()
         elif opcion == '5':
-            if lista_senal is not None:
+            if contador_senales > 0:
                 grafica_inicial(lista_senal)
             else:
                 print('\nPrimero debe cargar un archivo XML')
                 continue
         elif opcion == '6':
-            pass
+            contador_senales = 0
+            lista_senal = None
+            print('\n |--SISTEMA REINICIADO--|\n')
         elif opcion == '7':
             print('\nPrograma Finalizado.....!\n')
             break
@@ -67,7 +73,7 @@ def carga():
     
     print('\n========================================================')
     
-    with Bar('Generando Archivo Xml...') as bar:
+    with Bar('Iniciando el Sistema...') as bar:
         for i in range(100):
             sleep(0.02)
             bar.next()

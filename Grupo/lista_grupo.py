@@ -1,11 +1,10 @@
 from Grupo.nodo_grupo import Nodo
-
-
+import os
 class lista_grupos:
     def __init__(self):
         self.cabeza = None
         self.contador_grupos = 0
-        
+    
     def agregar(self,grupo):
         if self.cabeza is None:
             self.cabeza = Nodo(grupo=grupo)
@@ -16,7 +15,7 @@ class lista_grupos:
             actual = actual.siguiente
         actual.siguiente = Nodo(grupo=grupo)
         self.contador_grupos += 1
-        
+    
     def recorrer_imprimir_grupos(self):
         print('===================================================')
         
@@ -30,3 +29,9 @@ class lista_grupos:
             actual = actual.siguiente
             
         print('===================================================')
+        
+    
+
+
+
+

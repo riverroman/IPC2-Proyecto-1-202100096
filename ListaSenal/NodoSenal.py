@@ -4,4 +4,3 @@ class NodoSenal:
         self.siguiente = siguiente
         
         
-        

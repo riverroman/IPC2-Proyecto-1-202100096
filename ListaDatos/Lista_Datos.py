@@ -1,6 +1,7 @@
 from .NodoDatos import NodoDatos
 import os
-from Patron.patron import patron 
+from Patron.patron import patron
+
 class ListaDatos:
     def __init__(self):
         self.cabeza = None
@@ -52,19 +53,18 @@ class ListaDatos:
         while actual != None:
             print('Tiempo: ', actual.dato.tiempo, 'Amplitud', actual.dato.amplitud , 'Valor: ', actual.dato.valor)
             actual = actual.siguiente
-
-
+            
     def graficar(self,nombre_senal,tiempo,amplitud):
         
         f = open('bb.dot','w')
         
         text = """
-
-            digraph G {"Tiempo="""+tiempo+"""","Amplitud="""+amplitud+""""->" """ "Nombre Senal: " +nombre_senal+ """" bgcolor="#3990C4" style="filled"
+        
+            digraph G {"Tiempo="""+tiempo+"""","Amplitud="""+amplitud+""""->" """ "Nombre Senal: " +nombre_senal+ """" bgcolor="white" style="filled"
             subgraph cluster_1 { fillcolor="#07c7a0" style="filled"
-            node [shape=circle fillcolor="gold:brown" style="radial" gradientangle=180]
+            node [shape=box3d fillcolor="gray" style="radial" gradientangle=180]
             a0 [ label=<
-            <TABLE border="3" cellspacing="10" cellpadding="10" style="rounded" bgcolor="blue:red" gradientangle="315">\n"""
+            <TABLE border="1" cellspacing="10" cellpadding="10" style="dotted" bgcolor="white">\n"""
             
         actual = self.cabeza
         sentinela_filas = actual.dato.tiempo
@@ -86,11 +86,11 @@ class ListaDatos:
                 
                 text += """<TR>"""
                 
-                text += """<TD border="3" bgcolor="yellow" gradientangle="315">""" + str(actual.dato.valor) + """</TD>\n"""
+                text += """<TD border="1" bgcolor="#90827b">""" + str(actual.dato.valor) + """</TD>\n"""
             
             else:
                 
-                text += """<TD border="3" bgcolor="yellow" gradientangle="315">""" + str(actual.dato.valor) + """</TD>\n"""
+                text += """<TD border="1" bgcolor="#90827b" gradientangle="315">""" + str(actual.dato.valor) + """</TD>\n"""
             
             actual = actual.siguiente
             
@@ -141,7 +141,6 @@ class ListaDatos:
             
             if digito.isdigit():
                 buffer += digito
-                
             else:
                 string_temporal = ""
                 #Aca se recorre la lista
@@ -154,8 +153,7 @@ class ListaDatos:
                 buffer = ""
                 
         return string_resultado
-                
-                                    
+                            
             
             
                 

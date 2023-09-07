@@ -6,7 +6,6 @@ from ListaSenal.senal import Senal
 from Grupo.lista_grupo import lista_grupos
 from Patron.lista_patron import lista_patrones
 
-
 def cargar_xml():
     
     try:
@@ -26,7 +25,6 @@ def cargar_xml():
             lista_datos_temporal = ListaDatos()
             lista_datos_patrones_temporal = ListaDatos()
 
-            
             #LLAMANDO LAS NUEVAS LISTAS
             #------------------------------------------------------
             lista_patrones_temporal = lista_patrones()
@@ -62,9 +60,12 @@ def cargar_xml():
                                             lista_patrones_temporal, lista_grupos_temporal))
 
         lista_senal_temporal.imprimir_listaSenal()
-        lista_senal_temporal.calcular_los_patrones("Prueba Ordenada")
+        
+        for senal in lista_senal_temporal.lista_senal:
+            lista_senal_temporal.calcular_los_patrones(senal.nombre)
+
         return lista_senal_temporal
-            
+        
     except FileNotFoundError:
         print("\nNo se pudo cargar el archivo XML, verifique la ruta ingresada")
         return None

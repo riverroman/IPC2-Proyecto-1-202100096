@@ -10,3 +10,4 @@ class Senal:
         
         self.lista_patrones_nivel = lista_patrones_nivel
         self.lista_grupos = lista_grupos
+        
